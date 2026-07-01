@@ -43,26 +43,28 @@ Debido a derechos de propiedad intelectual, los binarios de los sistemas operati
 
 ---
 
-## 🐳 Gestión y Subida de Imágenes Docker Customizadas
+---
 
-Las estaciones de trabajo de los usuarios y los servidores intermedios (`webnexocorp`, `nexocorpdb`, `nexocorpbak`, etc.) se han materializado modificando manualmente contenedores basados en la imagen `webterm` (añadiendo pistas del CTF en archivos de texto, modificando permisos mediante el bit `SUID` y levantando servicios con distintos usuarios).
+## 🐳 Ubicación de las Imágenes Docker Customizadas
 
-Dado que estos sistemas de archivos no se suben directamente a GitHub por restricciones de espacio, se gestionan a través de un registro público como **Docker Hub**. 
+Las estaciones de trabajo del organigrama, los servidores internos y los sistemas de simulación de amenazas se ejecutan de manera nativa en el entorno local. Sin embargo, para garantizar la portabilidad y la auditoría del proyecto, las imágenes base personalizadas (con sus respectivos usuarios, configuraciones con el bit `SUID` y pistas del CTF) se encuentran alojadas públicamente en **Docker Hub**.
 
-### Pasos para guardar y subir tus contenedores modificados:
+* **Directorio Principal del Desarrollador:** [https://hub.docker.com/u/javierdelap](https://hub.docker.com/u/javierdelap)
 
-Si realizas cambios dentro de un nodo de usuario en GNS3 y quieres congelarlo y subirlo a tu cuenta de Docker Hub para que sea portable, ejecuta los siguientes comandos en la consola de la **GNS3 VM** (o en tu terminal local si manejas el demonio de Docker):
+### Lista de Repositorios de Contenedores (NexoCorp):
 
+#### 🔹 Zona Desmilitarizada (DMZ)
+* 🌐 **Servidor Web Corporativo:** `javierdelap/webnexocorp:latest`
+* 🏢 **Portal Corporativo Central:** `javierdelap/opnexocorp:latest`
+* 🍯 **Sistema de Detección Proactiva:** `javierdelap/honeypot:latest`
+
+#### 🔹 Red de Área Local (LAN)
+* 🗄️ **Base de Datos Central:** `javierdelap/nexocorpdb:latest`
+* 👨‍💼 **Estación de Dirección (CEO):** `javierdelap/charlieceo:latest`
+* 💻 **Estación de Desarrollo (Dev):** `javierdelap/bobdev:latest`
+* 👩‍💼 **Estación de Gestión (J. García):** `javierdelap/jgarcia:latest`
+* 👥 **Estaciones de Personal (M. Rodríguez / Alice Admin):** `javierdelap/mrodriguez:latest` / `javierdelap/aliceadmin:latest`
+
+Para desplegar o auditar cualquiera de estas imágenes de forma independiente, se puede forzar su descarga mediante el comando:
 ```bash
-# 1. Identificar el ID del contenedor Docker que está corriendo en GNS3
-docker ps
-
-# 2. Congelar el estado actual del contenedor creando una nueva imagen local
-# Cambia 'ID_CONTENEDOR' por el tuyo y usa tu usuario de Docker Hub
-docker commit ID_CONTENEDOR tu_usuario_docker/nexocorp-users:latest
-
-# 3. Iniciar sesión en Docker Hub desde la terminal
-docker login -u tu_usuario_docker
-
-# 4. Subir la imagen empaquetada al registro público en la nube
-docker push tu_usuario_docker/nexocorp-users:latest
+docker pull javierdelap/NOMBRE_NODO:latest
