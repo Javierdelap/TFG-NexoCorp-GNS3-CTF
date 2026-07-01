@@ -38,8 +38,8 @@ Debido a derechos de propiedad intelectual, los binarios de los sistemas operati
 
 ### 2. Appliances y Sistemas Operativos de Red
 * **pfSense (Imagen QEMU):** [Descarga Oficial de pfSense ISO](https://www.pfsense.org/download/).
-* **OpenWrt (Imagen de Enrutamiento):** [Descarga de OpenWrt x86/64](https://openwrt.org/docs/guide-user/virtualization/gns3).
-* **Kali Linux (Appliance GNS3):** [Marketplace Oficial de GNS3](https://www.gns3.com/marketplace/appliances/kali-linux).
+* **OpenWrt (Imagen de Enrutamiento):** [Descarga de OpenWrt x86/64]([https://openwrt.org/docs/guide-user/virtualization/gns3](https://www.gns3.com/marketplace/appliances/openwrt-2)).
+* **Kali Linux (Appliance GNS3):** [Oficial de Kali]([https://www.gns3.com/marketplace/appliances/kali-linux](https://cdimage.kali.org/kali-2026.2/kali-linux-2026.2-qemu-amd64.7z)).
 
 ---
 
