@@ -63,7 +63,8 @@ Las estaciones de trabajo del organigrama, los servidores internos y los sistema
 * 👨‍💼 **Estación de Dirección (CEO):** `javierdelap/charlieceo:latest`
 * 💻 **Estación de Desarrollo (Dev):** `javierdelap/bobdev:latest`
 * 👩‍💼 **Estación de Gestión (J. García):** `javierdelap/jgarcia:latest`
-* 👥 **Estaciones de Personal (M. Rodríguez / Alice Admin):** `javierdelap/mrodriguez:latest` / `javierdelap/aliceadmin:latest`
+* 👥 **Estación de Recursos Humanos (M. Rodríguez ):** `javierdelap/mrodriguez:latest`
+* 💻 **Estación de Sistemas (Alice Admin):** `javierdelap/aliceadmin:latest`
 
 Para desplegar o auditar cualquiera de estas imágenes de forma independiente, se puede forzar su descarga mediante el comando:
 ```bash
