@@ -70,7 +70,6 @@ Para desplegar o auditar cualquiera de estas imágenes de forma independiente, s
 ```bash
 docker pull javierdelap/NOMBRE_NODO:latest
 
-```markdown
 ## 🚀 Guía de Despliegue Rápido
 
 Para replicar el laboratorio en un entorno local:
