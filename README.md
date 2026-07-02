@@ -69,6 +69,7 @@ Las estaciones de trabajo del organigrama, los servidores internos y los sistema
 Para desplegar o auditar cualquiera de estas imágenes de forma independiente, se puede forzar su descarga mediante el comando:
 ```bash
 docker pull javierdelap/NOMBRE_NODO:latest
+```
 
 ## 🚀 Guía de Despliegue Rápido
 
