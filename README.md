@@ -69,3 +69,11 @@ Las estaciones de trabajo del organigrama, los servidores internos y los sistema
 Para desplegar o auditar cualquiera de estas imágenes de forma independiente, se puede forzar su descarga mediante el comando:
 ```bash
 docker pull javierdelap/NOMBRE_NODO:latest
+
+```markdown
+## 🚀 Guía de Despliegue Rápido
+
+Para replicar el laboratorio en un entorno local:
+1. **Importar la topología:** Descarga este repositorio e importa el archivo `NexoCorp-Topology.gns3` en tu cliente de GNS3.
+2. **Cargar los Appliances:** Asegúrate de disponer de las imágenes QEMU oficiales de *pfSense*, *OpenWrt* y *Kali Linux* indicadas en la sección de descargas.
+3. **Levantar el escenario:** Al iniciar la topología, GNS3 se encargará de mapear las conexiones y llamará al demonio de Docker para instanciar los nodos de la red corporativa.
