@@ -19,8 +19,7 @@ Siguiendo el mapa de ingeniería establecido, el repositorio y la topología bas
 
 * **Fichero Core:** `Red_Clasica.gns3` (Estructura lógica, enlaces y coordenadas del lienzo).
 * **Configuraciones de Red de la Electrónica:**
-    * Fichero de respaldo (*backup*) de configuración XML del router/firewall **pfSense**.
-    * Scripts de configuración de interfaces y cortafuegos de **OpenWrt** (`/etc/config/network` y `/etc/config/firewall`).
+    * Fichero de respaldo (*backup*) de configuración XML del router/firewall **pfSense**
 * **Instalación de Herramientas en Kali Linux:** Guía y listado de scripts para el aprovisionamiento de las utilidades ofensivas (*Nmap, Dirb, Sshuttle*).
 * **Personalización Estética:** Directorio con los **iconos customizados** asignados de forma manual a cada nodo para representar visualmente el organigrama empresarial.
 
