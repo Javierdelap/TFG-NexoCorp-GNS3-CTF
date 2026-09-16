@@ -17,7 +17,7 @@ El escenario implementa una arquitectura de *Defensa en Profundidad* basada en l
 
 Siguiendo el mapa de ingeniería establecido, el repositorio y la topología base contienen:
 
-* **Fichero Core:** `NexoCorp-Topology.gns3` (Estructura lógica, enlaces y coordenadas del lienzo).
+* **Fichero Core:** `Red_Clasica.gns3` (Estructura lógica, enlaces y coordenadas del lienzo).
 * **Configuraciones de Red de la Electrónica:**
     * Fichero de respaldo (*backup*) de configuración XML del router/firewall **pfSense**.
     * Scripts de configuración de interfaces y cortafuegos de **OpenWrt** (`/etc/config/network` y `/etc/config/firewall`).
@@ -74,6 +74,6 @@ docker pull javierdelap/NOMBRE_NODO:latest
 ## 🚀 Guía de Despliegue Rápido
 
 Para replicar el laboratorio en un entorno local:
-1. **Importar la topología:** Descarga este repositorio e importa el archivo `NexoCorp-Topology.gns3` en tu cliente de GNS3.
+1. **Importar la topología:** Descarga este repositorio e importa el archivo `Red_Clasica.gns3` en tu cliente de GNS3.
 2. **Cargar los Appliances:** Asegúrate de disponer de las imágenes QEMU oficiales de *pfSense*, *OpenWrt* y *Kali Linux* indicadas en la sección de descargas.
 3. **Levantar el escenario:** Al iniciar la topología, GNS3 se encargará de mapear las conexiones y llamará al demonio de Docker para instanciar los nodos de la red corporativa.
